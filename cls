@@ -15,6 +15,6 @@ if [ ! -z "$1" ]
         else 
             ls "$1"
         fi
-else
-    ls
+    else
+        ls
 fi
