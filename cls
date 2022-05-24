@@ -9,7 +9,12 @@ clear
 
 if [ ! -z "$1" ]
     then
-        ls "$1"
+        if [ ! -z "$2" ]
+            then 
+                ls "$1" "$2"
+        else 
+            ls "$1"
+        fi
 else
     ls
 fi
